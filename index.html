@@ -9,6 +9,8 @@
 <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
 <style>
+    .ui-grid-a img{width: 100%; height: auto; margin: 1px;}
+    .ui-grid-a div{padding:10px;}
     .ui-grid-b img{width: 100%; height: auto; margin: 10px;}
     .ui-grid-b div{padding:10px;}
     .imgCaption{width: 100%; text-align: center; font-size: 16px;}
@@ -91,14 +93,65 @@
 
 <div data-role="page" id="page7">
     <div data-role="header">
-        <a href="#grid" data-icon="arrow-l" class="ui-btn-left">Back</a>
+    <a href="#grid" data-icon="arrow-l" class="ui-btn-left">Back</a>
+        <h1>Calendars</h1>
+    </div>
+    <div data-role="content">
+        <div class="ui-grid-a">
+            <!-- 1st row -->
+            <div class="ui-block-a">
+                <a href="#page11"> <img src="images/January 2021 Calendar.jpg" /></a>
+            </div>
+            <div class="ui-block-b">
+                <a href="#page12"> <img src="images/February 2021 Calendar.jpg" /></a>
+            </div>
+            <!-- 2nd row -->
+            <div class="ui-block-a">
+               <a href="#page13"> <img src="images/March 2021 Calendar.png" /></a>
+            </div>
+            <div class="ui-block-b">
+               <a href="#page14"> <img src="images/April 2021 Calendar.png" /></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="page11">
+    <div data-role="header">
+        <a href="#page7" data-icon="arrow-l" class="ui-btn-left">Back</a>
             <h1>Zoom in on Calendar</h1>
     </div>
-    <img src="images/calendar.png" width="100%" alt="" />
+    <img src="images/January 2021 Calendar.jpg" width="100%" alt="" />
+    
+</div>
+
+<div data-role="page" id="page12">
+    <div data-role="header">
+        <a href="#page7" data-icon="arrow-l" class="ui-btn-left">Back</a>
+            <h1>Zoom in on Calendar</h1>
+    </div>
+    <img src="images/February 2021 Calendar.jpg" width="100%" alt="" />
+    
+</div>
+
+<div data-role="page" id="page13">
+    <div data-role="header">
+        <a href="#page7" data-icon="arrow-l" class="ui-btn-left">Back</a>
+            <h1>Zoom in on Calendar</h1>
+    </div>
+    <img src="images/March 2021 Calendar.png" width="100%" alt="" />
+    
+</div>
+
+<div data-role="page" id="page14">
+    <div data-role="header">
+        <a href="#page7" data-icon="arrow-l" class="ui-btn-left">Back</a>
+            <h1>Zoom in on Calendar</h1>
+    </div>
+    <img src="images/April 2021 Calendar.png" width="100%" alt="" />
     
 </div>
 
 </body>
-
 
 </html>
