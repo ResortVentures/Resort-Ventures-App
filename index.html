@@ -32,18 +32,74 @@
     </div>
     <div data-role="content">
         <ul data-role="listview" data-inset="true">
-         <li><a href="#image">Images</a></li>
-         <li><a href="#grid">Grids</a></li>
+         <li><a href="#calendars">Co-owner Calendars</a></li>
+         <li><a href="#services">Services</a></li>
         </ul>
     </div>
 </div>
 
-<div data-role="page" id="image">
+<div data-role="page" id="calendars">
     <div data-role="header" data-position="fixed">
     <a href="#home" data-icon="arrow-l" class="ui-btn-left">Back</a>
-        <h1>Images</h1>
+        <h1>Co-owner Calendars</h1>
     </div>
-    <div data-role="content">Content</div>
+    <div data-role="content">
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <a href="#page2"> <img src="images/calendar.png" /></a>
+                <div class="imgCaption">4 Member Calendars    </div>
+            </div>
+            <div class="ui-block-b">
+                <a href="#page3"> <img src="images/calendar.png" /></a>
+                <div class="imgCaption">5 Member Calendars    </div>
+            </div> 
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="services">
+    <div data-role="header" data-position="fixed">
+    <a href="#home" data-icon="arrow-l" class="ui-btn-left">Back</a>
+        <h1>Services</h1>
+    </div>
+    <div data-role="content">
+        <div class="ui-grid-b">
+            <!-- 1st row -->
+            <div class="ui-block-a">
+                <a href="#page4"> <img src="images/puppy.png" /></a>
+                <div class="imgCaption">Our Pets</div>
+            </div>
+            <div class="ui-block-b">
+                <a href="#page5"> <img src="images/events.png" /></a>
+                <div class="imgCaption">Upcoming Events</div>
+            </div>
+            <div class="ui-block-c">
+                <a href="#page6"> <img src="images/schedule.png" /></a>
+                <div class="imgCaption">Schedule</div>
+            </div>
+            <!-- 2nd row -->
+            <div class="ui-block-a">
+               <a href="#page7"> <img src="images/literature.png" /></a>
+               <div class="imgCaption">Literature</div>
+            </div>
+            <div class="ui-block-b">
+               <a href="#page8"> <img src="images/social.png" /></a>
+               <div class="imgCaption">Social</div>
+            </div>
+            <div class="ui-block-c">
+               <a href="#page9"> <img src="images/lecturers.png" /></a>
+               <div class="imgCaption">Lecturers</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="page4">
+    <div data-role="header" data-position="fixed">
+    <a href="#home" data-icon="arrow-l" class="ui-btn-left">Back</a>
+        <h1>Our Pets</h1>
+    </div>
+    <div data-role="content">This is our office cat named Whiskers</div>
     <div class="ui-grid-solo">
         <div class="ui-block-a">
             <img src="images/Whiskers.jpg" alt=""/>
@@ -51,61 +107,11 @@
     </div>    
 </div>
 
-<div data-role="page" id="grid">
-    <div data-role="header" data-position="fixed">
-    <a href="#home" data-icon="arrow-l" class="ui-btn-left">Back</a>
-        <h1>Grids</h1>
-    </div>
-    <div data-role="content">
-        <div class="ui-grid-b">
-            <!-- 1st row -->
-            <div class="ui-block-a">
-                <a href="#page2"> <img src="images/calendar.png" /></a>
-                <div class="imgCaption">4 Co-owners</div>
-            </div>
-            <div class="ui-block-b">
-                <a href="#page3"> <img src="images/calendar.png" /></a>
-                <div class="imgCaption">5 Co-owners</div>
-            </div>
-            <div class="ui-block-c">
-                <a href="#page4"> <img src="images/schedule.png" /></a>
-                <div class="imgCaption">Schedule</div>
-            </div>
-            <!-- 2nd row -->
-            <div class="ui-block-a">
-               <a href="#page5"> <img src="images/literature.png" /></a>
-               <div class="imgCaption">Literature</div>
-            </div>
-            <div class="ui-block-b">
-               <a href="#page6"> <img src="images/social.png" /></a>
-               <div class="imgCaption">Social</div>
-            </div>
-            <div class="ui-block-c">
-               <a href="#page7"> <img src="images/lecturers.png" /></a>
-               <div class="imgCaption">Lecturers</div>
-            </div>
-            <!-- 3rd row -->
-            <div class="ui-block-a">
-                <a href="#page8"> <img src="images/events.png" /></a>
-                <div class="imgCaption">Events</div>
-            </div>
-            <div class="ui-block-b">
-                <a href="#page9"> <img src="images/feedback.png" /></a>
-                <div class="imgCaption">Feedback</div>
-            </div>
-            <div class="ui-block-c">
-               <a href="#page10"> <img src="images/about.png" /></a>
-               <div class="imgCaption">About</div>
-            </div>
-        </div>
-    </div>
-</div>
-
 <!-- Display of "4 Member" Calendars -->
 <div data-role="page" id="page2">
     <div data-role="header" data-position="fixed">
-    <a href="#grid" data-icon="arrow-l" class="ui-btn-left">Back</a>
-        <h1>Calendars</h1>
+    <a href="#calendars" data-icon="arrow-l" class="ui-btn-left">Back</a>
+        <h1>4 Member Calendars</h1>
     </div>
     <div data-role="content">
         <div class="ui-grid-solo">
@@ -367,10 +373,15 @@
 <!-- Display of "5 Member" Calendars -->
 <div data-role="page" id="page3">
     <div data-role="header" data-position="fixed">
-    <a href="#grid" data-icon="arrow-l" class="ui-btn-left">Back</a>
-        <h1>Calendars</h1>
+    <a href="#calendars" data-icon="arrow-l" class="ui-btn-left">Back</a>
+        <h1>5 Member Calendars</h1>
     </div>
     <div data-role="content">
+        <div class="ui-grid-solo">
+            <div class="ui-block-a">
+                <img src="calendars 5 member/Color Legend 5.png" alt=""/>
+            </div>
+        </div>
         <div class="ui-grid-a">
             <!-- 1st row -->
             <div class="ui-block-a">
@@ -425,6 +436,11 @@
     </div>
     <div class="ui-grid-solo">
         <div class="ui-block-a">
+            <img src="calendars 5 member/Color Legend 5.png" alt=""/>
+        </div>
+    </div>
+    <div class="ui-grid-solo">
+        <div class="ui-block-a">
             <img src="calendars 5 member/January 2021 Calendar 5.png" alt=""/>
         </div>
     </div>    
@@ -434,6 +450,11 @@
     <div data-role="header" data-position="fixed">
         <a href="#page3" data-icon="arrow-l" class="ui-btn-left">Back</a>
             <h1>Calendar Zoom</h1>
+    </div>
+    <div class="ui-grid-solo">
+        <div class="ui-block-a">
+            <img src="calendars 5 member/Color Legend 5.png" alt=""/>
+        </div>
     </div>
     <div class="ui-grid-solo">
         <div class="ui-block-a">
@@ -449,6 +470,11 @@
     </div>
     <div class="ui-grid-solo">
         <div class="ui-block-a">
+            <img src="calendars 5 member/Color Legend 5.png" alt=""/>
+        </div>
+    </div>
+    <div class="ui-grid-solo">
+        <div class="ui-block-a">
             <img src="calendars 5 member/March 2021 Calendar 5.png" alt=""/>
         </div>
     </div>
@@ -458,6 +484,11 @@
     <div data-role="header" data-position="fixed">
         <a href="#page3" data-icon="arrow-l" class="ui-btn-left">Back</a>
             <h1>Calendar Zoom</h1>
+    </div>
+    <div class="ui-grid-solo">
+        <div class="ui-block-a">
+            <img src="calendars 5 member/Color Legend 5.png" alt=""/>
+        </div>
     </div>
     <div class="ui-grid-solo">
         <div class="ui-block-a">
@@ -473,6 +504,11 @@
     </div>
     <div class="ui-grid-solo">
         <div class="ui-block-a">
+            <img src="calendars 5 member/Color Legend 5.png" alt=""/>
+        </div>
+    </div>
+    <div class="ui-grid-solo">
+        <div class="ui-block-a">
             <img src="calendars 5 member/May 2021 Calendar 5.png" alt=""/>
         </div>
     </div>    
@@ -482,6 +518,11 @@
     <div data-role="header" data-position="fixed">
         <a href="#page3" data-icon="arrow-l" class="ui-btn-left">Back</a>
             <h1>Calendar Zoom</h1>
+    </div>
+    <div class="ui-grid-solo">
+        <div class="ui-block-a">
+            <img src="calendars 5 member/Color Legend 5.png" alt=""/>
+        </div>
     </div>
     <div class="ui-grid-solo">
         <div class="ui-block-a">
@@ -497,6 +538,11 @@
     </div>
     <div class="ui-grid-solo">
         <div class="ui-block-a">
+            <img src="calendars 5 member/Color Legend 5.png" alt=""/>
+        </div>
+    </div>
+    <div class="ui-grid-solo">
+        <div class="ui-block-a">
             <img src="calendars 5 member/July 2021 Calendar 5.png" alt=""/>
         </div>
     </div>      
@@ -506,6 +552,11 @@
     <div data-role="header" data-position="fixed">
         <a href="#page3" data-icon="arrow-l" class="ui-btn-left">Back</a>
             <h1>Calendar Zoom</h1>
+    </div>
+    <div class="ui-grid-solo">
+        <div class="ui-block-a">
+            <img src="calendars 5 member/Color Legend 5.png" alt=""/>
+        </div>
     </div>
     <div class="ui-grid-solo">
         <div class="ui-block-a">
@@ -521,6 +572,11 @@
     </div>
     <div class="ui-grid-solo">
         <div class="ui-block-a">
+            <img src="calendars 5 member/Color Legend 5.png" alt=""/>
+        </div>
+    </div>
+    <div class="ui-grid-solo">
+        <div class="ui-block-a">
             <img src="calendars 5 member/September 2021 Calendar 5.png" alt=""/>
         </div>
     </div>    
@@ -530,6 +586,11 @@
     <div data-role="header" data-position="fixed">
         <a href="#page3" data-icon="arrow-l" class="ui-btn-left">Back</a>
             <h1>Calendar Zoom</h1>
+    </div>
+    <div class="ui-grid-solo">
+        <div class="ui-block-a">
+            <img src="calendars 5 member/Color Legend 5.png" alt=""/>
+        </div>
     </div>
     <div class="ui-grid-solo">
         <div class="ui-block-a">
@@ -545,6 +606,11 @@
     </div>
     <div class="ui-grid-solo">
         <div class="ui-block-a">
+            <img src="calendars 5 member/Color Legend 5.png" alt=""/>
+        </div>
+    </div>
+    <div class="ui-grid-solo">
+        <div class="ui-block-a">
             <img src="calendars 5 member/November 2021 Calendar 5.png" alt=""/>
         </div>
     </div>    
@@ -557,12 +623,15 @@
     </div>
     <div class="ui-grid-solo">
         <div class="ui-block-a">
+            <img src="calendars 5 member/Color Legend 5.png" alt=""/>
+        </div>
+    </div>
+    <div class="ui-grid-solo">
+        <div class="ui-block-a">
             <img src="calendars 5 member/December 2021 Calendar 5.png" alt=""/>
         </div>
     </div>      
 </div>
-
-
 
 </body>
 
